@@ -1,5 +1,5 @@
 #include "SMSCommunicator.h"
-#include "Config.h"
+#include "../Config/Config.h"
 
 SMSCommunicator::SMSCommunicator(int rx, int tx) {
     rxPin = rx;

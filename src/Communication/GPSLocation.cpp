@@ -1,5 +1,5 @@
 #include "GPSLocation.h"
-#include "Config.h"
+#include "../Config/Config.h"
 
 GPSLocation::GPSLocation(int rx, int tx) {
     rxPin = rx;

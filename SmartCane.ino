@@ -1,11 +1,11 @@
 #include <Arduino.h>
-#include "Config.h"
-#include "DistanceSensor.h"
-#include "VibrationAlert.h"
-#include "GPSLocation.h"
-#include "SMSCommunicator.h"
-#include "BatteryMonitor.h"
-#include "EmergencyButton.h"
+#include "src/Config/Config.h"
+#include "src/Sensors/DistanceSensor.h"
+#include "src/Actuators/VibrationAlert.h"
+#include "src/Communication/GPSLocation.h"
+#include "src/Communication/SMSCommunicator.h"
+#include "src/Sensors/BatteryMonitor.h"
+#include "src/Sensors/EmergencyButton.h"
 
 // Instantiate Modules
 DistanceSensor distanceSensor(PIN_TRIG, PIN_ECHO);

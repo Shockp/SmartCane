@@ -2,7 +2,7 @@
 #define VIBRATION_ALERT_H
 
 #include <Arduino.h>
-#include "Config.h"
+#include "../Config/Config.h"
 
 class VibrationAlert {
 private:
