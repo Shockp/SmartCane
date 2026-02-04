@@ -21,18 +21,11 @@ bool EmergencyButton::isPressed() {
     }
 
     if ((millis() - lastDebounceTime) > debounceDelay) {
-        // whatever the reading is at, it's been there for longer than the debounce
-        // delay, so take it as the actual current state:
-
         // If using INPUT_PULLUP, LOW means pressed
         if (reading == LOW) {
              pressed = true;
         }
     }
-    
-    // Simple state check for now, can be improved for edge detection
-    // For this project, returning true while held is fine, or we can add edge logic.
-    // Let's stick to simple "is currently pressed" logic but filtered.
     
     lastState = reading;
     return pressed;
