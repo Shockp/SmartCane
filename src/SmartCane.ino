@@ -51,8 +51,6 @@ void loop() {
 
     // 4. Battery Check
     if (batteryMonitor.isLow()) {
-        // Optional: Low battery warning behavior
-        // For now, maybe just print to serial or a specific vibration pattern
         Serial.println("Battery Low!");
     }
 
